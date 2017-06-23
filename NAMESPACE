@@ -1,0 +1,5 @@
+export(critic)
+  importFrom("grDevices", "rainbow", "trans3d", "windows")
+  importFrom("graphics", "abline", "axis", "contour", "filled.contour","image", "lines", "par", "persp", "points")
+  importFrom("stats", "cor", "cor.test", "cov2cor", "qchisq", "qf","qnorm", "var")
+ importFrom("grDevices", "dev.new")

@@ -1,0 +1,7 @@
+Problèmes et tâches
+
+1. Vérifier l'algorithme bootstrap
+2. ellipse de confiance du maximum
+3. autoriser plusieurs pics détectés et classés
+4. au lieu de "ordinary" , "naive"
+5. adapter la limite de significativité à persp
