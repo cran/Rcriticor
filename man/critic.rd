@@ -6,10 +6,9 @@
 An integro delayed correlogram to find critical periods for a biological phenomenon driven by a climatic factor
 }
 \usage{
-    critic(t, Y, fac = NULL, dinf = 10, durinf = 2, dsup = 90, dursup = 90, 
-    nperm = 0, nboot = 0, period = 365, 
-    dt = 1, seriesName = "year", grtype = "image",
-    roll = FALSE, alpha = 0.05, ps.print = FALSE)
+critic(t, Y, fac = NULL, dinf = 10, durinf = 2, dsup = 90, dursup = 90, nperm = 0, 
+nboot = 0, period = 365, dt = 1, seriesName = "year", grType = "image", roll = FALSE, 
+alpha = 0.05,ps.print = FALSE)
 }
 \arguments{
   \item{t}{
@@ -48,11 +47,11 @@ numeric : value of the time increment for integration. Default = 1
   \item{seriesName}{
 string : name of the replicates of the time series. Default = "year"
 }
-  \item{grtype}{
-type of map to draw. grtype may take the values "image","contour","filledcontour","persp". These codes call the correspondig R base functions.
+  \item{grType}{
+type of map to draw. grType may take the values "image","contour","filledcontour","persp". These codes call the correspondig R base functions.
 }
   \item{roll}{
-logical : only used if grtype=="persp" in what case the perspective plot rotates slowly to show all aspects of the perspective.
+logical : only used if grType=="persp" in what case the perspective plot rotates slowly to show all aspects of the perspective.
 }
   \item{alpha}{
 numeric: significance level for the tests. Default=0.05
@@ -67,16 +66,28 @@ For each replication (by default: year) calculates the sums of the time series t
 \value{
 z : a matrix containing the correlation coefficients of Y with the sum of j days  
 }
-\author{
-Jean-Sebastien Pierre
+\references{
+Pierre, J. S., Guillome, M. and Querrien, M. T. 1986. A Statistical and Graphic Method for Seeking in Which Periods of the Year Are 
+the Animal Populations Peculiarly Sensitive to a Given Weather Component (Critical Periods of Time) - Application to the Case of Cereal Aphids. 
+- Acta Oecologica-Oecologia Generalis 7: 365-380. (in french, english summary)
 }
-\references{Pierre, J. S., Guillome, M. and Querrien, M. T. 1986. A Statistical and Graphic Method for Seeking in Which Periods of the Year Are the Animal Populations Peculiarly Sensitive to a Given Weather Component (Critical Periods of Time) - Application to the Case of Cereal Aphids (in french) - Acta Oecologica-Oecologia Generalis 7: 365-380}
+\author{
+Jean-Sebastien Pierre ; jean-sebastien.pierre@univ-rennes1.fr
+}
+
 
 \seealso{
-\code{\link{image}},  \code{\link{contour}},  \code{\link{filled.contour}},  \code{\link{persp}} for graphical representations of the correlogram. 
+\code{\link{image}},\code{\link{contour}},\code{\link{filled.contour}},\code{\link{persp}} for graphical representations. 
 }
 \examples{
+##---- Should be DIRECTLY executable !! ----
+##-- ==>  Define data, use random,
+##--	or do  help(data=index)  for the standard data sets.
+data(time,wy)
 data(sit,time3)
 critic(t=time3,Y=sit,dinf=50,dsup=90,durinf=20,dursup=50)
 }
+
+% Add one or more standard keywords, see file 'KEYWORDS' in the
+% R documentation directory.
 \keyword{ ts }

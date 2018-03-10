@@ -14,10 +14,12 @@ Maximum populations (log transformed) of the aphid \emph{sitobion avenae} in whe
  num [1:7] 2.08e-01 2.12 3.36e+01 1.08 9.99e-16 ...
 }
 \source{
-PIERRE J.S., GUILLOME M., QUERRIEN M.T., 1986. Une methode statistique et graphique de recherche des periodes de l'annee ou les populations animales sont particulierement sensibles a une composante donnee du climat (periodes critiques). Application au cas des pucerons des cereales. Acta Oecologica, Oecol. Gener., 7, 365-380.
+Pierre, J. S., Guillome, M. and Querrien, M. T. 1986. A Statistical and Graphic Method for Seeking in Which Periods of the Year Are 
+the Animal Populations Peculiarly Sensitive to a Given Weather Component (Critical Periods of Time) - Application to the Case of Cereal Aphids. 
+- Acta Oecologica-Oecologia Generalis 7: 365-380. (in french, english summary)
 }
 \examples{
 data(sit)
-print(sit)
+## maybe str(sit) ; plot(sit) ...
 }
 \keyword{datasets}

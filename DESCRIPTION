@@ -1,15 +1,15 @@
 Package: Rcriticor
-Version: 1.1
 Type: Package
-Title: Critical Periods
-Date: 2017-06-18
+Title: Pierre-Goldwin Correlogram
+Version: 2.0
+Date: 2018-04-03
 Author: Jean-Sebastien PIERRE [aut,cre]
-Maintainer: Jean-Sebastien Pierre <jean-sebastien.pierre@univ-rennes1.fr>
+Maintainer: J.S. Pierre <jean-sebastien.pierre@univ-rennes1.fr>
 Depends: R (>= 3.2.0)
-Description: Pierre's correlogram. Research of critical periods in the past. Integrates a time series in a given window.  
+Description: Goldwin-Pierre correlogram. Research of critical periods in the past. Integrates a time series in a given window.  
 License: GPL (>= 2)
 LazyLoad: yes
 NeedsCompilation: no
-Packaged: 2017-06-23 15:07:57 UTC; jpierre
+Packaged: 2018-03-09 18:36:35 UTC; jpierre
 Repository: CRAN
-Date/Publication: 2017-06-23 16:05:37 UTC
+Date/Publication: 2018-03-10 16:39:10 UTC
